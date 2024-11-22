@@ -1,0 +1,24 @@
+lvalue s
+push 0
+:=
+lvalue i
+push 0
+:=
+label L0
+rvalue i
+push 3
+<
+gofalse out0
+lvalue s
+rvalue s
+push 2
++
+:=
+lvalue i
+rvalue i
+push 1
++
+:=
+goto L0
+label out0
+halt
